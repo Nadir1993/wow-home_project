@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    outline: none;
+}
+body{
+    position: relative;
+}
+h1,h2,h3,h4,h5,a,button{
+    font-family:poppins;
+}
+@font-face{
+    font-family: lora;
+    src: url(../font/Lora-Italic.ttf),
+    url(../font/Lora-Regular.ttf);
+    font-family:crimson-text;
+    src: url(../font/CrimsonText-Regular.ttf);
+    font-family: poppins;
+    src: url(../font/Poppins-Regular.ttf),
+    url(../font/Poppins-SemiBold.ttf);
+}
+/* header start */
+.header hr{
+    margin-top:4px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0%;
+    height:0%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 9;
+}
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 5%;
+}
+.main a{
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    word-spacing: 10px;
+    text-decoration: none;
+}
+.sidenav a{
+    text-decoration: none;
+    color:#818181;
+    display: block;
+    transition: 0.3s;
+    font-size: 16px;
+    padding: 5%;
+    letter-spacing: 2px;
+}
+.sidenav hr{
+    margin-bottom: 5px;
+    margin-top: 6px;
+}
+.sidenav a:hover,.offcanvas a:focus{
+    color:#2c2b2b;
+}
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#main{
+    transition: margin-left .5s;
+    padding-right: 6px;
+    padding-top: 15px;
+}
+.head-bar{
+    padding-top: 1vh;
+    max-height: 10vh;
+}
+/* wow section start */
+.wow-logo{
+    padding-bottom: 2vh;
+    padding-top: 10vh;
+}
+.img-logo{
+    max-height: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.font-1 p{
+    font-size: 21px;
+    font-family: lora;
+    font-style: italic;
+}
+.wow-btn {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+.wow-button{
+    padding: 16px 60px;
+    border: 1px solid black;
+    border-radius: 50px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 2px;
+    display: inline-block;
+    transition: all .5s ease;
+}
+.wow-button:hover{
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+.wow-button:focus{
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #8c8c8c;
+}
+.wow-image{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin: auto;
+}
+.wow-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* features section start */
+.features{
+    padding: 70px 0;
+    background-color:#f7f7f7;
+}
+.text-block{
+    font-size: 45px;
+}
+.hr-mid{
+    width: 6%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0 !important;
+}
+.col-block{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.block{
+    border: 1px solid #dcd9d9;
+    padding-top: 8%;
+    padding-bottom: 5%;
+    padding-right: 25%;
+    padding-left: 25%;
+    margin-right: 0px;
+}
+.icon{
+    background-color: #2d2d2d;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block i{
+   font-size: 28px;
+}
+.block h4{
+    margin:10px 0;
+    font-size: 21px;
+}
+.block p{
+    font-family: crimson-text serif;
+    font-size: 16px;
+    line-height: 28px;
+    padding-top: 10px;
+}
+.why-wow{
+    padding: 50px 0;
+}
+.holder-para h3{
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.hr-short{
+    width: 5%;
+}
+.holder-para p{
+    font-family: crimson-text sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+}
+.holder-img{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+.round-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.line-full{
+    margin: 50px 0;
+}
+.step-wow{
+    padding: 50px 0;
+    background-color: #f7f7f7;
+}
+.social{
+    padding: 50px 0;
+}
+.social ul li{
+    display: inline-block;
+    border: 1px solid #c8c2c2;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+.social ul li a i{
+    padding: 10px;
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    transition: all .5s ease;
+}
+.social ul li a i:hover{
+    color: white;
+    background-color: #2d2d2d;
+}
+.footer{
+    padding-top: 35px;
+    padding-bottom: 45px;
+    border: 1px solid #cccccc;
+}
+.footer-p1 p,.footer-p2 p{
+    font-family: crimson-text sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+}
+.footer-p2{
+    text-align: right;
+}
+/* generic page start */
+.generic-page{
+    background-color: #f7f7f7;
+}
+.generic-section{
+    padding:40px 0;
+}
+.img-generic{
+    padding-top: 15px;
+    width: 100%;
+    padding-bottom: 60px;
+}
+.generic-p{
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-family: crimson-text;
+    line-height: 30px;
+    text-align: justify;
+}
+.generic-p:last-child{
+    padding-bottom: 0px;
+}
+/* element-full section start */
+.element-full{
+    background-color: #f7f7f7;
+}
+.element-center{
+    padding:50px 0;
+}
+.element-heading:not(:last-child){
+    margin-bottom: 50px;
+}
+.element-heading p{
+    font-family: crimson-text;
+    padding-right: 380px;
+    line-height: 30px;
+}
+.blockquote-row{
+    padding-left: 5px;
+}
+.blockquote-side{
+    border-left: thick solid black;
+    padding-left:20px;
+}
+.blockquote-side p{
+    font-family: lora sans-serif;
+    font-style: italic;
+    font-size: 21px;
+    
+}
+.element-heading .e-social{
+    padding-top: 36px;
+    padding-bottom: 0px;
+}
+.form-section h3{
+    margin: 30px 0;
+}
+input,select,textarea{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 30px;
+    font-family: lora sans-serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 35px;
+    margin-bottom: 30px;
+    resize: none;
+}
+textarea{
+    height: 250px;
+}
+.form-section button{
+    padding: 15px 28px;
+    border-radius: 50px;
+    outline: none;
+    border:1px solid black;
+    margin-right: 15px;
+    transition: all .3s ease;
+}
+.form-section button:hover{
+    color: white;
+    background-color: black;
+}
+.section-image{
+    padding: 15px 0;
+}
+.section-image h3{
+    margin: 40px 0;
+}
+.section-image img{
+    width: 100%;
+}
+
+/* @media (min-width: 992px){
+    .col-md-pull-9 {
+        right: 75%;
+    }
+    .col-md-pull-3{
+        left: 25%;
+    }
+} */
